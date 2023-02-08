@@ -5,7 +5,7 @@ import UserController from "../controllers/UserController";
 import chatBotController from "../controllers/chatBotController";
 let router = express.Router();
 let initWebRouters = (app) => {
-  router.get('/', HomeController.getHomePage)
+  router.get('/', HomeController)
     router.post('/post-crud', HomeController.postCRUD);
     router.get('/get-crud', HomeController.handleCRUD);
     // =================API USER========================
